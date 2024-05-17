@@ -5,7 +5,7 @@
 
     # displayManager = {
     #   autoLogin.enable = true;
-    #   autoLogin.user = "amper";
+    #   autoLogin.user = "volik";
     #   lightdm.enable = true;
     # };
 
