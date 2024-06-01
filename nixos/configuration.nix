@@ -9,7 +9,7 @@
     ./modules/xserver.nix
   ];
 
-  networking.hostName = "volik-nixos"; # Define your hostname.
+  networking.hostName = "volik-nixos-laptop"; # Define your hostname.
 
   time.timeZone = "Europe/Moscow"; # Set your time zone.
 

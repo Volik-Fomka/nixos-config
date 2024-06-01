@@ -3,7 +3,7 @@
     disk = {
       vdb = {
         type = "disk";
-        device = "/dev/sda";
+        device = "/dev/vdb";
         content = {
           type = "gpt";
           partitions = {
@@ -26,10 +26,10 @@
                 name = "crypted";
                 # disable settings.keyFile if you want to use interactive password entry
                 #passwordFile = "/tmp/secret.key"; # Interactive
-                settings = {
-                  allowDiscards = true;
-                 # keyFile = "/tmp/secret.key";
-                };
+                #settings = {
+                #  allowDiscards = true;
+                #  keyFile = "/tmp/secret.key";
+                #};
                 #additionalKeyFiles = [ "/tmp/additionalSecret.key" ];
                 content = {
                   type = "btrfs";
@@ -49,7 +49,7 @@
                     };
                     "/swap" = {
                       mountpoint = "/.swapvol";
-                      swap.swapfile.size = "16G";
+                      swap.swapfile.size = "24000M";
                     };
                   };
                 };
